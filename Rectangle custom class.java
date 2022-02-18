@@ -1,20 +1,20 @@
 package com.company;
 
-class Square{
-    int side;
-    public int area(){
-        return side * side;
-    }
-    public int perimeter(){
-        return 4 * side;
+class Rectangle{
+    int length;
+    int breadth;
+    public void operations(){
+        System.out.println("The area of the rectangle is "+(length * breadth));
+        System.out.println("The perimeter of the rectangle is "+(2*(length + breadth)));
     }
 }
 
-public class SquareCustomClass {
+public class Rectangle_CustomClass {
     public static void main(String[] args) {
-        Square s1 = new Square();
-        s1.side = 5;
-        System.out.println("The area of the square is "+s1.area());
-        System.out.println("The perimeter of the square is "+s1.perimeter());
+        Rectangle r1 = new Rectangle();
+        r1.length = 3;
+        r1.breadth = 5;
+        r1.operations();
+
     }
 }
